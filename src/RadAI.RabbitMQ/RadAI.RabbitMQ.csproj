@@ -4,7 +4,7 @@
 		<PackageTags>C# RabbitMQ Cooked Rabbit CookedRabbit NetCore RadAI</PackageTags>
 	</PropertyGroup>
 	<ItemGroup>
-    <PackageReference Include="OpenTelemetry" Version="1.7.0" />
+    <PackageReference Include="OpenTelemetry" Version="1.9.0" />
     <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
 		<PackageReference Include="RabbitMQ.Client.OAuth2" Version="1.0.0" />
 	</ItemGroup>

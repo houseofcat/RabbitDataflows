@@ -2,7 +2,7 @@
 	<Import Project="..\..\common.props" />
   <ItemGroup>
     <PackageReference Include="prometheus-net" Version="8.2.1" />
-    <PackageReference Include="prometheus-net.DotNetRuntime" Version="4.4.0" />
+    <PackageReference Include="prometheus-net.DotNetRuntime" Version="4.4.1" />
   </ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\RadAI.Utilities\RadAI.Utilities.csproj" />

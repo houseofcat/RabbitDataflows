@@ -2,7 +2,7 @@
 	<Import Project="..\..\common.props" />
 	<ItemGroup>
     <PackageReference Include="BouncyCastle.NetCore" Version="2.2.1" />
-		<PackageReference Include="CommunityToolkit.HighPerformance" Version="8.2.2" />
+		<PackageReference Include="CommunityToolkit.HighPerformance" Version="8.3.2" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\RadAI.Utilities\RadAI.Utilities.csproj" />
