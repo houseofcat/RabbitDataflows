@@ -39,6 +39,7 @@ public class Letter : IMessage
     public Baggage BaggageContext { get; set; }
     public LetterMetadata LetterMetadata { get; set; }
     public ReadOnlyMemory<byte> Body { get; set; }
+    public TimeSpan? Expiration { get; set; }
 
     public IBasicProperties BuildProperties(IChannelHost channelHost, bool withOptionalHeaders)
     {
@@ -46,6 +47,10 @@ public class Letter : IMessage
 
         IBasicProperties props = this.CreateBasicProperties(channelHost, withOptionalHeaders, LetterMetadata);
         props.MessageId = MessageId;
+        if (Expiration is not null)
+        {
+            props.Expiration = Expiration.Value.TotalMilliseconds.ToString();
+        }
 
         // Non-optional Header.
         props.Headers[Constants.HeaderForObjectType] = Constants.HeaderValueForMessage;
